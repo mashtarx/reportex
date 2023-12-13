@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "reportex"
+version = "0.2.2"
+description = ""
+authors = ["Mashter"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+reportlab = "^4.0.5"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs-material = "^9.4.3"
+
+
+[tool.poetry.group.black.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+reportex = 'reportex.cli:run'
